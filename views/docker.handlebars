@@ -1,0 +1,242 @@
+<!--<div class="container-fluid">-->
+<!--<div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                Informações do Portal
+            </div>-->
+
+<!-- PONTO DE INSERÇÃO DO CONTEÚDO PRINCIPAL -->
+<!--<div class="page-header">
+                <h1>Docker, Instalação e Configuração</h1>
+            </div>-->
+<div class="page-header">
+    <h1>Docker</h1>
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        O que é o Docker?
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <p class="list-group-item-heading">
+                                    <h2><strong>Definição</strong></h2>
+                                </p>
+                                <p>
+                                    O Docker é um software de código aberto usado para implantar aplicativos dentro de
+                                    containers virtuais. A conteinerização permite que vários aplicativos funcionem em
+                                    diferentes ambientes complexos. Por exemplo: o Docker permite executar o WordPress
+                                    em sistemas Windows, Linux e macOS, sem problemas.
+                                </p>
+                                <p class="list-group-item-text"></p>
+                                <p>Fonte oficial: <i><a href="https://docs.docker.com/engine/install/ubuntu/"
+                                            target="_blank">Docker
+                                            Oficial</a></i>
+                                </p>
+
+                                <h2><b>Removendo versões antigas ou fora do padrão da Câmara</b>.</h2>
+                                <p><code>apt-get remove docker docker-engine docker.io containerd runc</code> .</p>
+
+                                <div class="divimagem">
+                                    <img src="images/docker/docker.jpg" alt="">
+                                </div>
+                                <br>
+                                <h2><b>Instalando o docker</b>.</h2>
+
+                                <p><b>Aualizando os pacotes</b></p>
+                                <p><code>sudo apt-get update</code></p>
+
+                                <p><b>Baixando o arquivo .sh do site oficial</b></p>
+                                <p><code>curl -fsSL https://get.docker.com -o get-docker.sh</code></p>
+
+                                <img src="images/docker/docker1.jpg" width="1100" alt=""><br><br>
+                                
+
+                                <p><b>Verficando se o Docker foi instaldo e está funcionando</b></p>
+                                <p>Comando: <code>status docker.service</code></p>
+
+                                <img src="images/docker/docker2.jpg" width="1100" height="300" alt=""> <br><br>
+
+                                <p>Após ter verfiicado que o Docker está <i><b>RUNNING</b></i>, vamos verificar o
+                                    repositório de
+                                    imagens.</p>
+                                <p>O comando é: <code>docker images</code></p>
+                                <p><strong><i>Observe que o repositório está vazio!!! Não foi baixada nenhuma imagem do
+                                            Git da
+                                            Câmara.</i></strong>
+                                </p>
+
+                                <img src="images/docker/docker3.jpg" alt=""><br><br>
+
+                                <p><strong>Exemplo de imagens baixadas do repositório oficial da Câmara.</strong></p>
+
+                                <img src="images/docker/docker4.jpg" width="1100" alt="">
+
+                                <br><br>
+
+                                <h2>Baixando imagens do repositório oficial da CD</h2>
+
+                                <p>
+                                    Link do repositório: <a
+                                        href="https://dockerhub.camara.leg.br/account/sign-in?redirect_url=%2Fharbor%2Fprojects">Github-CD</a>
+                                </p>
+                                <p>Será usado como exemplo a seção SESEN!!</p>
+
+                                <img src="images/docker/docker5.jpg" width="1100" height="500" alt=""><br><br>
+
+                                <p><i><b>Após realizar o logon será nescessário procurar pela seção que possua a imagem dos
+                                    serviços
+                                    em
+                                    execução</b></i></p>
+                                <p>Mais uma vez usaremos a SESEN como exemplo.</p>
+
+                                <img src="images/docker/docker6.jpg" width="1100" height="500" alt=""><br><br>
+
+                                <p><i><b>Acessando o repositório sesen e baixando uma imagem de um dos serviços que é ofertado
+                                    o
+                                    suporte.</b></i></p>
+                                
+
+                                <img src="images/docker/docker7.jpg" width="1100" alt=""><br><br>
+
+                                <img src="images/docker/docker8.jpg" width="1100" alt="">
+
+                                <h2>Instalando a imagem no servidor</h2>
+
+                                <p>Depois de acionar o botão <i>pull command </i> com um click do botão esquerdo do
+                                    mouse no
+                                    terminal
+                                    irá copiar o
+                                    comando:</p>
+                                <p><code>docker pull
+                                        dockerhub.camara.leg.br/sesen/mediawiki@sha256:39574d1e3e2549cfbdbebc0c84514ee3c2d3112b8b22f5d6a7c0ffd0f142c0dd</code>
+                                </p>
+                                <p><strong>OBSERVAÇÃO!!!</strong><i><strong> O procedimento para baixar qualquer imagem
+                                            é o
+                                            mesmo do
+                                            exemplo acima</strong></i></p>
+
+                                <img src="images/docker/docker9.jpg" width="1100" alt=""><br><br>
+
+                                <p>Conferindo imagem no docker</p>
+                                <p>Comando: <code>docker ps</code></p>
+
+                                <img src="images/docker/docker10.jpg" alt="Imagem baixada"><br><br>
+
+                                <p>Imagem no repositório local de images no docker do servidor de teste:</p>
+
+                                <img src="images/docker/docker11.jpg" alt="Imagens do servidor">
+                            </li>
+                            <p></p>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<!--<p>Fonte oficial: <i><a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Docker
+            Oficial</a></i>
+</p>
+
+<p><i>Removendo versões antigas ou fora do padrão da Câmara</i>.</p>
+<p><code>apt-get remove docker docker-engine docker.io containerd runc</code> .</p>
+
+<div class="divimagem">
+    <img src="images/docker/docker.jpg" alt="">
+</div><br><br>
+
+<p><i>Instalando o docker</i>.</p><br>
+
+<p>Aualizando os pacotes</p>
+<p><code>sudo apt-get update</code></p><br>
+
+<p>Baixando o arquivo .sh do site oficial</p>
+<p><code>curl -fsSL https://get.docker.com -o get-docker.sh</code></p>
+
+<img src="images/docker/docker1.jpg" width="1100" alt="">
+<br>
+
+<p>Verficando se o Docker foi instaldo e está funcionando </p>
+<p>Comando: <strong>status docker.service</strong> </p>
+
+<img src="images/docker/docker2.jpg" width="1100" height="300" alt=""> <br><br>
+
+<p>Após ter verfiicado que o Docker está <i><b>RUNNING</b></i>, vamos verificar o repositório de
+    imagens.</p>
+<p>o Comando é: <strong>docker images</strong></p>
+<p><strong><i>Observe que o repositório está vazio!!! Não foi baixada nenhuma imagem do Git da
+            Câmara.</i></strong>
+</p>
+
+<img src="images/docker/docker3.jpg" alt="">
+
+<p><strong>Exemplo de imagens baixadas do repositório oficial da Câmara.</strong></p>
+
+<img src="images/docker/docker4.jpg" width="1100" alt="">
+
+<br><br>
+
+<h2>Baixando imagens do repositório oficial</h2>
+
+<p>
+    Link do repositório: <a
+        href="https://dockerhub.camara.leg.br/account/sign-in?redirect_url=%2Fharbor%2Fprojects">Github-CD</a>
+</p>
+<p>Será usado como exemplo a seção SESEN!!</p>
+
+<img src="images/docker/docker5.jpg" width="1100" height="500" alt=""><br><br>
+
+<p>Após realizar o logon será nescessário procurar pela seção que possua a imagem dos serviços
+    em
+    execução</p>
+<p>Mais uma vez usaremos a SESEN como exemplo.</p>
+
+<img src="images/docker/docker6.jpg" width="1100" height="500" alt=""><br><br>
+
+<p>Acessando o repositório sesen e baixando uma imagem de um dos serviços que é ofertado o
+    suporte.</p>
+<br>
+
+<img src="images/docker/docker7.jpg" width="1100" alt=""><br><br>
+
+<img src="images/docker/docker8.jpg" width="1100" alt="">
+
+<h2>Instalando a imagem no servidor</h2><br>
+
+<p>Depois de acionar o botão <i>pull command </i> com um click do botão esquerdo do mouse no
+    terminal
+    irá copiar o
+    comando:</p>
+<p><strong>docker pull
+        dockerhub.camara.leg.br/sesen/mediawiki@sha256:39574d1e3e2549cfbdbebc0c84514ee3c2d3112b8b22f5d6a7c0ffd0f142c0dd</strong>
+</p>
+<p><strong>OBSERVAÇÃO!!!</strong><i><strong> O procedimento para baixar qualquer imagem é o
+            mesmo do
+            exemplo acima</strong></i></p>
+
+<img src="images/docker/docker9.jpg" width="1100" alt="">
+
+<p>Conferindo imagem no docker</p>
+<p>Comando: <strong>docker ps</strong></p><br>
+
+<img src="images/docker/docker10.jpg" alt="Imagem baixada">
+
+<p>Imagem no repositório local de images no docker do servidor de teste:</p>
+
+<img src="images/docker/docker11.jpg" alt="Imagens do servidor">
+</li>
+<p></p>
+
+<br>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "ambientacao",
+  "version": "0.0.17-TES",
+  "data": "2023-03-17",
+  "hora": "11:15",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "tes": "node index.js",
+    "teste-unitario": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.camara.gov.br/sesen/Ambientacao.git"
+  },
+  "description": ""
+}

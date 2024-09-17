@@ -1,0 +1,327 @@
+<div class="container-fluid">
+	<!--<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				Informações do Portal
+			</div>-->
+	<!-- PONTO DE INSERÇÃO DO CONTEÚDO PRINCIPAL -->
+	<div class="page-header">
+		<h1>Sistemas e Ferramentas </h1>
+	</div>
+	<div class="row">
+		<ul>
+			{{#each lista}}
+			<li>{{id}} - {{nome}}</li>
+			{{/each}}
+		</ul>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Informações do Portal
+				</div>
+				<div class="idHeader">
+					<h4>
+						<p class="titulo">
+							<b>Sistemas e ferramentas utilizadas na Câmara dos Deputados</b>
+						</p>
+					</h4>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>ArgosCD</strong>
+						</p>
+						<p class="list-group-item-text">
+							ArgoCD é uma ferramenta declarativa de entrega contínua GitOps para Kubernetes.
+						</p>
+						<p>
+							O ArgoCD Operator gerencia todo o ciclo de vida do Argo CD e seus componentes. O objetivo
+							do operador é automatizar as tarefas necessárias ao operar uma implantação do Argo CD. <br>
+							Além da instalação, o operador ajuda a automatizar o processo de atualização, backup e
+							restauração conforme necessário e remove a atividade humana o máximo possível.
+						</p>
+
+						<a href="/argo">ArgoCD</a> | <a href="https://argoproj.github.io/cd/">Documentacao Oficial</a>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Ative</strong>
+						</p>
+						<p class="list-group-item-text">
+							O sistema é usado para gestão de iterações de desenvolvimento externo referentes a
+							contratos baseados em
+							repertórios de tipos de atividades com esforço calculado em USTs. <br> O sistema cuidará
+							do repertório de tipos
+							de
+							atividades disponíveis para desenvolvimento externo e do aceite do artefato entregue em
+							cada atividade. <br> O
+							sistema controlará quais sistemas devem ser atendidos por cada contrato e equipe da
+							contratada.
+						</p>
+						<p></p>
+						<a href="https://sesen2.camara.gov.br/ative/#/" target="_blank">Acesso ao Sistema Ative</a> | <a
+							href="/ative">Treinamento Oficial Ative</a>
+						<p></p>
+
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Autobots</strong>
+						</p>
+						<p class="list-group-item-text">
+							Autobots é o portal de autosserviço pelo qual o desenvolvedor tem acesso a vários
+							recursos de infraestrutura.
+						</p>
+						<p><b>Acesso:</b>
+							A solução está integrada ao CAS para autenticação e ao AD para autorização conforme os
+							grupos cadastrados no sistema IDEA. Para saber qual grupo <b>IDEA</b>os sistemas estão vinculados
+							para utilização do Autobots, consulte o Relatório de Sistemas e operações.
+
+							Ao se autenticar no CAS, o AD diz ao Autobots quais os grupos a que o usuário pertence.
+							Segundo essa informação, o(s) sistema(s) que o usuário tem acesso aparecem na caixa
+							denominada "SISTEMA"
+						</p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+						<p></p>
+						<a href="https://autobots.camara.gov.br/djangoDeploy/deployApp/index.html"
+							target="_blank">Acesso ao Sistema Autobots</a> | <a href="/autobots">Documentacao</a>
+						<p></p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>DockerHub</strong>
+						</p>
+						<p class="list-group-item-text">
+
+							O Projeto Harbor é um projeto de Registry Cloud Native, Opensource e confiável que
+							armazena, assina e analisa
+							conteúdos. <br> Harbor extende o projeto Opensource Docker Distribution adicionando
+							funcionalidades como
+							segurança,
+							identidade e gerenciamento. <br> Harbor suporta funcionalidades avançadas como
+							gerenciamento de usuários,
+							controle de
+							acesso, monitoração de atividades e replicação entre instâncias. <br> Ter um registry
+							mais perto do ambiente de
+							desenvolvimento e produção pode ainda melhorar a eficiência de transferência de imagem.
+							É o respostório oficial
+							das imagens no ambiente redecamara.
+						</p>
+						<p></p>
+						<a href="https://dockerhub.camara.leg.br/account/sign-in?redirect_url=%2Fharbor%2Fprojects"
+							target="_blank">DockerHub da Câmara</a> | <a href="/docker">Documentação</a>
+						</p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>GIT</strong>
+						</p>
+						<p class="list-group-item-text">
+						<p>A Ditec possui o seu próprio repositório ofical, onde os códigos ficam armazenados
+							possibilitanto gerenciar o
+							versionamento das aplicações e sistemas legados da Câmara dos Deputados.
+						</P>
+						<p></p>
+						<a href="https://git.camara.gov.br/" target="_blank">Git da Câmara</a> | <a
+							href="/git">Documentação</a>
+						<p></p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<p class="list-group-item-heading">
+								<strong>IDEA-N</strong>
+							</p>
+							<p class="list-group-item-text">
+							<p>Assim como o AD(Active Directory), software utlizado na redecamara que armazena e
+								gerencia as
+								contas de usuário
+								o <b>IDEA-N</b> define os grupos de usuários que estão associados a direitos. <br>
+								Criado
+								para que o responsável
+								do
+								recurso conseguisse permitir a gestão dos grupos de usuários vinculados a esse
+								direito.Veja a documentação oficial.
+							</p>
+							<p></p>
+							<a href="https://idea.camara.leg.br/#/Documentacao" target="_blank">Documentação IDEA-N</a> | <a href="/idean">Overview sobre IDEA-N</a>
+							<p></p>
+							<p class="">
+								<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+							</p>
+						</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Jenkins</strong>
+						</p>
+						<p class="list-group-item-text">
+							Jenkins é usado para construir e testar o seu produto continuamente, para que os
+							desenvolvedores possam integrar
+							continuamente as mudanças na construção. <br> Jenkins é a ferramenta de CI / CD de
+							código aberto mais popular no
+							mercado hoje e é usado no suporte de DevOps, junto com outras ferramentas nativas da
+							nuvem.
+						<p></p>
+						</p>
+						<a href="https://jenkins2.camara.gov.br/" target="_blank">Acesso ao Serviço do Jenkins2</a> | <a
+							href="/jenkins">Informações Complementares</a>
+						<p></p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Kubernetes</strong>
+						</p>
+						<p class="list-group-item-text">
+							O Kubernetes é uma plataforma portátil, extensível e de código aberto para gerenciar
+							cargas de trabalho e
+							serviços em contêineres, que facilita tanto a configuração declarativa quanto a
+							automação. Possui um ecossistema
+							grande e em rápido crescimento. Os serviços, suporte e ferramentas do Kubernetes estão
+							amplamente disponíveis.
+						</p>
+						<a href=""></a>
+
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>OTRS</strong>
+						</p>
+						<p class="list-group-item-text">
+						<p>Ferramenta de gestão de chamados utilizada pela Câmara dos Deputados. Sistema utilizado
+							para
+							dar permissão local
+							de administrador, solicitações internas entre as áreas da Ditec dentre outros serviços.
+							<br>
+							Para acessar a
+							interface de agente do OTRS é necessário obrigatoriamente fazer parte de uma fila. <br>
+							Para
+							incluir
+							membros em uma fila, o chefe da seção ou diretor deve acessar o IDEA e incluir o ponto
+							da
+							pessoa no grupo que
+							corresponde à fila (ex.: ITSMCoausSatus)
+						</p>
+						</p>
+						<a href="https://servicosti.camara.leg.br/otrs/index.pl?Action=AgentTicketProcess"
+							target="_blank">Acesso ao Sistema OTRS </a> | <a href="/admlocal">Solicitação de Privilégios
+							Administrador Local via Intranet</a> | <a href="/otrs">Treinamento Oficial</a>
+						<p></p>
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Rancher</strong>
+						</p>
+						<p class="list-group-item-text">
+							O Rancher é uma plataforma completa de gerenciamento de contêineres para Kubernetes,
+							oferecendo as ferramentas
+							para executar o Kubernetes com sucesso em qualquer lugar. <br>
+							O Rancher agrega valor significativo ao Kubernetes, primeiro centralizando a
+							autenticação e o controle de acesso
+							baseado em função (RBAC) para todos os clusters, <br> dando aos administradores globais
+							a capacidade de
+							controlar o
+							acesso ao cluster a partir de um local.
+						</p>
+						<p></p>
+						<p><a href="https://rancher.camara.gov.br/login?timedOut=true">Rancher</a></p>
+						<p></p>
+
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+				</div>
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Redmine</strong>
+						</p>
+						<p class="list-group-item-text">
+							É uma ferramenta de gerenciamento de projetos, ou seja, oferece suporte a gestão,
+							simplificanbdo e
+							oraganizando todos os projetos executados e em execução através dos ticktes criados na
+							ferramenta.
+						</p>
+						<a href="http://redmine.camara.gov.br/" n target="_blank">Redmine</a> |
+						<a href="https://sptdes.camara.gov.br/wiki/Tutorial_Redmine"
+							target="_blank">Redmine-Tutorial</a>
+
+						<p class="">
+							<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+						</p>
+					</li>
+				</div>
+
+				<div class="panel-body">
+					<li class="list-group-item">
+						<p class="list-group-item-heading">
+							<strong>Sonar</strong>
+						</p>
+						<p class="list-group-item-text">
+							Sonar é uma ferramenta open-source que permite a coleta e visualização dos resultados
+							gerados pela análise estática automatizada do código-fonte do sistema. Ela possibilita
+							gerenciar a qualidade de software analisando o código fonte Java dos projetos. A
+							ferramenta é utilizada para coleta automática de indicadores de qualidade dos projetos.
+
+							O Sonar usa várias ferramentas de análise estática de código-fonte para extrair medidas
+							de software que podem ser usadas para orientar a melhoria de software (Adaptado de
+							wikipedia). Eis algumas das ferramentas utilizadas pelo Sonar: Checkstyle, PMD,
+							FindBugs, Cobertura etc.
+						<p><a href="https://sptdes.camara.gov.br/wiki/Sonar">Documentação Sonar</a></p>
+						</p>
+
+						<p></p><br>
+					</li>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<br><br><br>

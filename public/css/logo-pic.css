@@ -1,0 +1,74 @@
+.logo-pic-svg {
+  width: 160px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Animação logotipo */
+#logotipo-pic .seta-p,
+#logotipo-pic .seta-i,
+#logotipo-pic .seta-c,
+#logotipo-pic .seta-pingo  {
+  -webkit-animation: ani_todo 120s infinite alternate;
+  -moz-animation: ani_todo 120s infinite alternate;
+  -ms-animation: ani_todo 120s infinite alternate;
+  -o-animation: ani_todo 120s infinite alternate;
+  animation: ani_todo 120s infinite alternate;
+}
+
+/* Keyframes todo */
+@-webkit-keyframes ani_todo {
+  0% { fill: #2E8180; }
+  33% { fill: #F0BB47; }
+  66% { fill: #4195CA; }
+  100% { fill: #C33B46; }
+}
+@-moz-keyframes ani_todo {
+  0% { fill: #2E8180; }
+  33% { fill: #F0BB47; }
+  66% { fill: #4195CA; }
+  100% { fill: #C33B46; }
+}
+@-ms-keyframes ani_todo {
+  0% { fill: #2E8180; }
+  33% { fill: #F0BB47; }
+  66% { fill: #4195CA; }
+  100% { fill: #C33B46; }
+}
+@-o-keyframes ani_todo {
+  0% { fill: #2E8180; }
+  33% { fill: #F0BB47; }
+  66% { fill: #4195CA; }
+  100% { fill: #C33B46; }
+}
+@keyframes ani_todo {
+  0% { fill: #2E8180; }
+  33% { fill: #F0BB47; }
+  66% { fill: #4195CA; }
+  100% { fill: #C33B46; }
+}
+
+/* Logotipo */
+#logotipo-pic { width: 160px; margin-bottom: 0.5em;}
+/*#logotipo-pic .seta-p { fill:#2E8180; }
+#logotipo-pic .seta-i { fill:#F0BB47; }
+#logotipo-pic .seta-c { fill:#4195CA; }
+#logotipo-pic .seta-pingo { fill:#C33B46; }*/
+
+/* Logo escrito */
+#logo-escrito { width: 160px; }
+#logo-escrito .letra-p,
+#logo-escrito .letra-i,
+#logo-escrito .letra-c { fill:#666666; }
+
+
+.api .glyphicon {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 0.5em;
+  opacity: 0.8;
+}
+
+.api a {
+  white-space: nowrap;
+}

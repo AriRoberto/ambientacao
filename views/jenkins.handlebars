@@ -1,0 +1,126 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<!--<div class="panel panel-default">
+				Informações do Portal
+			</div>-->
+
+			<!-- PONTO DE INSERÇÃO DO CONTEÚDO PRINCIPAL -->
+			<div class="page-header">
+				<h1>Jenkins</h1>
+			</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Instação, Configuração e Primeiro Job
+				</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<p class="list-group-item-heading">
+								<strong>Instalação</strong>
+							</p>
+							<h5><i>Verificando os Serviços:</i></h5>
+							<p class="list-group-item-text"></p>
+							<p><code>service --status-all</code></p>
+
+							<h5><i>Verificando as portas disponíveis</i></h5>
+							<p><code>netstat -i -v -e</code></p>
+							<p><strong>O comando pode ser usado sem as opções -v e -e</strong></p>
+
+							<p>
+								Após a verificação dos serviços e portas iremos para a instalação do
+								<strong>Jenkins</strong>.
+							</p>
+							<p>
+								Referência: <a href="https://www.jenkins.io/doc/book/installing/linux"
+									target="_blank">Guia de instalação
+									do Jenkins</a>
+							</p>
+							<h5><i><strong>Instalação</strong></i></h5>
+							<p>Será instalada uma chave de acesso</p>
+							<p><code>
+								curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+								/usr/share/keyrings/jenkins-keyring.asc > /dev/null
+							</code></p><br>
+							<p>Validação do repositório binário</p>
+
+							<p><code>
+								echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+								https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+								/etc/apt/sources.list.d/jenkins.list > /dev/null
+
+							</code></p><br>
+							<p> Atualização dos pacotes</p>
+							<p><code>sudo apt-get update</code></p><br>
+							<p>Instalação do Jenkins</p>
+							<p><code>sudo apt-get install jenkins</code></p><br>
+							<p>Verificando se o serviços do jenkins está ativo e rodando</p>
+							<p><code>systemctl status jenkins.service</code></p><br>
+							<p>Parando o serviço do Jenkins</p>
+							<p><code>systemctls stop jenkins.service</code></p><br>
+							<p>Iniciando o serviço do Jenkins</p>
+							<p><code>systemctl start jenkins.service</code> ou
+								<code>systemctl restart jenkins.service</code>
+							</p><br>
+							<p><strong>Agora com todas as etapas realizdas com sucesso o Jenkins está instalado e o
+									serviço em execução</strong></p>
+
+							<p class="">
+								<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+							</p>
+						</li>
+
+						<li class="list-group-item">
+							<p class="list-group-item-heading">
+								<strong>Primeiro Job</strong>
+							</p>
+							<p class="list-group-item-text">
+							<p>O objetivo desse tópico é demonstrar como é feito um job na ferramenta de CI utlizada na
+								Câmara dos Deputados que é o Jenkins,
+								cabe ressaltar que atualmente todo processo de criação e configuração do job é feito
+								pelo
+								<a href="https://autobots.camara.gov.br/djangoDeploy/deployApp/index.html"
+									target="_blank"><strong>Autobots</strong></a>.
+							</p>
+							<p>
+								O projeto que será utlizado para exemplificar a criação e configuração do job é o
+								SIVIS-Backend.
+							</p>
+							<p><strong>TELA DE LOGIN</strong></p>
+							<img src="images/jenkins/job.jpg" width="100%" height="auto" alt="Login"><br><br>
+
+							<p><strong>Escolha da Coordenação - Ex. COPAD</strong></p>
+							<img src="images/jenkins/job1.jpg" width="100%" height="auto" alt="Coordenação"><br><br>
+
+							<p><strong>Opção "Novo Job"</strong></p>
+							<img src="images/jenkins/job2.jpg" width="100%" height="auto" alt="Novo job"><br><br>
+
+							<p><strong>Definir nome e tipo de projeto - "PIPELINE"</strong></p>
+							<img src="images/jenkins/job3.jpg" width="100%" height="auto" alt="Definição nome e tipo de projeto"><br><br>
+
+							<p><strong>Configurar o job do projeto</strong></p>
+							<img src="images/jenkins/job4.jpg" width="100%" height="auto"  alt=""><br>
+							<img src="images/jenkins/job5.jpg" width="100%" height="auto" alt=""><br>
+							<img src="images/jenkins/job6.jpg" width="100%" height="auto" alt=""><br>
+							<img src="images/jenkins/job7.jpg" width="100%" height="auto" alt=""><br><br>
+
+							<p><strong>Tela de execução do job - Opçãp "Construir"</strong></p>
+							<img src="images/jenkins/job8.jpg" width="100%" height="auto" alt="Construção do job"><br><br>
+
+							<p>Após todas as etapas o seu job foi contruído e está na esteira.</p>
+							<p><strong>Lembrando que esse processo já foi automatizado pelo Autobots</strong></p>
+
+							<p class="">
+								<span>Copad - SESEN | P_999078 - Ari Roberto</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+</div>
